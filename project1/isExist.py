@@ -1,31 +1,33 @@
 import os
 
 def is_exist():
-    is_file_exist = os.path.exists("/home/acrooxy/Desktop/code/project1/dict.txt")
-    # print(os.path.exists("/home/acrooxy/Desktop/code/project1/dict.txt"))
+    path = '/home/acrooxy/Desktop/dictProject/project1/dict.txt'
+    is_file_exist = os.path.exists(path)
+    print(is_file_exist)
 
-    if is_file_exist == True:
-        print("File dict.txt {}.".format("exist"))
+    if os.path.exists(path) == True: # to get True result remember to give chmod 777 permissions to the file
+        return True
+        
     elif is_file_exist == False:
-        print("File dict.txt {}.".format("doesn't exist"))
+        f = open("project1/dict.txt", "w")
+        print("File is created now and it's ready to use!")
 
-    file = is_file_exist
+is_exist()
 
-    is_file_exist_test = os.path.exists("/home/acrooxy/Desktop/code/project1/test.txt")
-    # print(os.path.exists("/home/acrooxy/Desktop/code/project1/test.txt"))
+def write_in_file():
+    if is_exist() == True:
+        path = '/home/acrooxy/Desktop/dictProject/project1/dict.txt'
+        count = 1
+        with open(path, 'r') as f:
+            lines = len(open(path, 'r'). readlines ()) + 1
+            print("Dictatory contains %s lines" % lines)
+            f = open(path, 'a')
+            f.write(str(lines))
+            f.write(" Przykladowy tekst do dodania\n")
+            # changing file from append a mode to r read
+            f = open(path, "r")
+            print(f.read())
+            f.close()
 
-    if is_file_exist_test == True:
-        print("File test.txt {}.".format("exist"))
-    elif is_file_exist_test == False:
-        print("File test.txt {}.".format("doesn't exist"))
-    print(is_file_exist_test)
-
-    test = is_file_exist_test
-
-
-    return is_file_exist, is_file_exist_test
-
-# os.path.exists(".server.conf"):
-a = is_exist()
-print("Def File = %s " % (a[0]))
-print("Def Test = %s " % (a[1]))
+#>>> f = open(filepath, "r")
+write_in_file()
