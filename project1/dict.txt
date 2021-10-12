@@ -1,14 +1,9 @@
-1 Przykladowy tekst do dodania
-2 Przykladowy tekst do dodania
-3 Przykladowy tekst do dodania
-4 Przykladowy tekst do dodania
-5 Przykladowy tekst do dodania
-6 Przykladowy tekst do dodania
-7 Przykladowy tekst do dodania
-8 Przykladowy tekst do dodania
-9 Przykladowy tekst do dodania
-10 Przykladowy tekst do dodania
-11 Przykladowy tekst do dodania
-12 Przykladowy tekst do dodania
-13 Przykladowy tekst do dodania
-14 Przykladowy tekst do dodania
+1 me - ja
+2 he - on
+3 appointment - spotkanie
+4 fake - zmyslony, nieprawdziwy
+5 class - klasa
+6 he - on
+7 he - on
+8 /bin/python /home/acrooxy/Desktop/dictProject/project1/isExist.py - d
+9 l - ll
