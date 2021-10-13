@@ -7,3 +7,5 @@ Welcome to dictionary !
 6 night - noc
 7 day - dzien
 8 someone - ktos
+9 me - ja
+10 yes - tak

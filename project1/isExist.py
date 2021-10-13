@@ -10,6 +10,12 @@ def is_exist():
         f = open("project1/dict.txt", "w")
         print("File is created now and it's ready to use!")
 
+def check_dict():
+    f = open(path, 'r')
+    a = input("Do you want to see dict file?  y/n : ")
+    if a == "y":
+        print(f.read())
+    
 def write_in_file():
 
 
@@ -37,15 +43,15 @@ def write_in_file():
                         print("Dictatory contains %s keys" % lines)
                         f = open(path, 'a')
                         f.write(str(lines) + ' ' + str(key) + " - " + str(value) + '\n')
-                        f = open(path, "r")
-                        dict = str(f.read())
-                        print(dict, "Dictionary printed")
+                        # f = open(path, "r")
+                        # dict = str(f.read())
+                        # print(dict, "Dictionary printed")
                         # print(f.read())
                         f.close()
                         break
-
+        check_dict()
     
                 # wordsList.append(line.split(None, 1)[1]) # add only first word
                 
 #>>> f = open(filepath, "r")
-write_in_file()
+# write_in_file()
