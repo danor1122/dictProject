@@ -1,9 +1,9 @@
-1 me - ja
-2 he - on
-3 appointment - spotkanie
-4 fake - zmyslony, nieprawdziwy
-5 class - klasa
-6 he - on
-7 he - on
-8 /bin/python /home/acrooxy/Desktop/dictProject/project1/isExist.py - d
-9 l - ll
+Welcome to dictionary ! 
+1 support - wsparcie
+2 somebody - ktos
+3 come - chodz
+4 umbrella - parasol
+5 dictionary - slownik
+6 night - noc
+7 day - dzien
+8 someone - ktos
