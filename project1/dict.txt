@@ -9,3 +9,4 @@ Welcome to dictionary !
 8 someone - ktos
 9 me - ja
 10 yes - tak
+11 Dictionary - słownik

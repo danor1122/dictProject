@@ -1,17 +1,25 @@
 # from kontrolaPrzeplywu.project1.isExist import *
-from isExist import is_exist, write_in_file
+from isExist import is_exist, write_in_file, check_dict
+from fileRename import Renamefile
 from findAWords import findfn
+import os
 
-# print(is_exist())
-# if is_exist() == True:
-#     print("We did it ! import {}".format("completed!"))
-# elif is_exist() == False:
-#     print("Unforcunatelly we couldn't import the file")
+print("""\n \t\t\t Script is made by Damian - ACROOXY \n
+\t Welcome to Dictionary""")
+decision = None
+while decision != "exit":  
+    decision = input("""1 Add an word ito file\n2 Find a word\n3 Dictionary check\n\n9 File Rename\n\nTo exit type \"exit\"\n""")  
+    if decision == '1':
+        write_in_file()
+    elif decision == '2':
+        findfn()
+    elif decision == '3':
+        check_dict()
+    elif decision == '9':
+        Renamefile()
 
-# Create program option service
-# what would you like to do? Choose option.
-# 1 find a word in dictionary
-# 2 add new word to dictionary
-# 
-write_in_file()
-findfn()
+        
+
+    else:
+        print("You have choosen a wrong option.")
+        

@@ -1,6 +1,8 @@
 from isExist import is_exist, write_in_file
 import string
+import linecache
 # from string import find,join
+
 
 path = '/home/acrooxy/Desktop/dictProject/project1/dict.txt'
 
@@ -10,21 +12,15 @@ def findfn():
 
     for line in f:
         wordlist = [line.split(' ', 2)[1] for line in f]
-        print(wordlist)
+        
         find_it = str(input("Which word would you like to fine? : "))
         if find_it in wordlist:
-            print("Word has been found!")
+            print("Word has been found!\n")
+            a = wordlist.index(find_it) + 2
+            
+            poem =  linecache.getline('dict.txt', a) # printing exact poem
+            print("Poem:",poem)     
+            
         else:
-            print("Could not find this word in Dictionary.")
-
-    # f.close()
-    # text = join(list, "")
-    # find_it = find(text, "im")
-    # if find_it > 1:
-    #     print("word has been found.")
-    # else:
-    #     print("Could'nt find this word.")
-    # if "yes" in list:
-    #     print('founded')
-    # else:
-    #     print("at least program is working")
+            print("Could not find this word in Dictionary.\n")
+# findfn()

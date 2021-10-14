@@ -12,22 +12,22 @@ def is_exist():
 
 def check_dict():
     f = open(path, 'r')
+    lines = len(open(path, 'r'). readlines ()) -1
     a = input("Do you want to see dict file?  y/n : ")
     if a == "y":
         print(f.read())
+        print("Dictionary contains %s lines" % (lines),'\n')
     
 def write_in_file():
-
-
     if is_exist() == True:
         with open(path, 'r') as f:
-            lines = len(open(path, 'r'). readlines ())
+            lines = len(open(path, 'r'). readlines ()) -1
             if lines == 0:
                 f = open(path, 'w')
                 f.write("Welcome to dictionary ! \n")
                 print("Welcome to dictionary, file is setted up and ready to use now !")
                 exit()
-            print(lines)
+            
             while input("Do you want to add new word to dictionary? \n Type \"yes\" or \"no\"? : ") == "yes":
                 lines = len(open(path, 'r'). readlines ())
                 key = str(input("Type english word: "))
@@ -49,7 +49,7 @@ def write_in_file():
                         # print(f.read())
                         f.close()
                         break
-        check_dict()
+        # check_dict()
     
                 # wordsList.append(line.split(None, 1)[1]) # add only first word
                 
