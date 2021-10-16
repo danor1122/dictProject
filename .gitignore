@@ -5,3 +5,5 @@ basic/
 project1/__pycache__
 pythonHelp
 project1/MyProgress.txt
+project1/sorting.py
+project1/setup.py
